@@ -57,4 +57,20 @@ h1 {
   text-align: center;
   font-size: 33px;
   padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+.header-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0 30px 0;
+  padding-top: 10px;
+}
+
+header p {
+  font-family: 'Courier Std';
+  font-style: normal;
+  font-size: 12px;
 }
