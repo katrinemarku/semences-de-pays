@@ -142,6 +142,10 @@ main p {
   text-align: justify;
 }
 
+main {
+  height: 450px;
+}
+
 .container {
   margin: auto;
   align-items: center;
@@ -170,7 +174,7 @@ figure {
   overflow: hidden;
 }
 
-img {
+.slider-img {
   width: 100%;
   transform-origin: center;
   transition-duration: 0.5s;
@@ -214,4 +218,14 @@ button {
 i.arrow {
   font-size: 22px;
   color: grey;
+}
+
+.box{
+  max-width: 150px;
+}
+
+.boxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
