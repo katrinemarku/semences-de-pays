@@ -112,3 +112,13 @@ hr {
   display: inline-flex;
   will-change: transform;
 }
+
+h2 {
+  font-size: 18px;
+  font-family: "Amatic SC";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  padding-left: 30px;
+  margin-top: 0px;
+}
