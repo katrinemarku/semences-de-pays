@@ -1,46 +1,46 @@
 @font-face {
-  font-family: 'Courier Std';
-  src: url('CourierStd-Oblique.woff2') format('woff2');
+  font-family: "Courier Std";
+  src: url("CourierStd-Oblique.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Courier Std';
-  src: url('CourierStd-BoldOblique.woff2') format('woff2');
+  font-family: "Courier Std";
+  src: url("CourierStd-BoldOblique.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Courier Std';
-  src: url('CourierStd.woff2') format('woff2');
+  font-family: "Courier Std";
+  src: url("CourierStd.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Courier Std';
-  src: url('CourierStd-Bold.woff2') format('woff2');
+  font-family: "Courier Std";
+  src: url("CourierStd-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Amatic SC';
-  src: url('AmaticSC-Bold.woff2') format('woff2');
+  font-family: "Amatic SC";
+  src: url("AmaticSC-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Amatic SC';
-  src: url('AmaticSC-Regular.woff2') format('woff2');
+  font-family: "Amatic SC";
+  src: url("AmaticSC-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -48,11 +48,11 @@
 
 body {
   background-color: white;
-  max-width: 375px;
+  width: 375px;
 }
 
 h1 {
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-weight: bold;
   text-align: center;
   font-size: 33px;
@@ -60,7 +60,7 @@ h1 {
   margin-bottom: 0px;
 }
 
-.header-links{
+.header-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -71,11 +71,44 @@ h1 {
 }
 
 header p {
-  font-family: 'Courier Std';
+  font-family: "Courier Std";
   font-style: normal;
   font-size: 12px;
 }
 
-hr{
+hr {
   border: 1px solid #000;
+}
+
+@keyframes scroll {
+	from {transform: translateX(0);}
+	to {transform: translateX(-100%);}
+}
+
+@keyframes text {
+	from {transform: translateX(-100%);}
+	to {transform: translateX(0);}
+}
+
+.scroll {
+  font-family: "Courier Std";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 19px; 
+}
+
+.track {
+  height: 100%;
+	white-space: nowrap;
+}
+
+.track>p>strong {
+  color: #000;
+}
+
+.text {
+  animation: scroll 7000ms linear infinite;
+  align-items: center;
+  display: inline-flex;
+  will-change: transform;
 }
