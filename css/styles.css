@@ -45,3 +45,16 @@
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  background-color: bisque;
+  max-width: 375px;
+}
+
+h1 {
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  text-align: center;
+  font-size: 33px;
+  padding-top: 10px;
+}
