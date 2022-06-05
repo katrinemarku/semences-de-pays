@@ -48,7 +48,8 @@
 
 body {
   background-color: white;
-  width: 375px;
+  max-width: 375px;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -70,10 +71,12 @@ h1 {
   padding-bottom: 5px;
 }
 
-header p {
+header a {
   font-family: "Courier Std";
   font-style: normal;
   font-size: 12px;
+  text-decoration: none;
+  color: black;
 }
 
 hr {
@@ -106,6 +109,7 @@ hr {
 }
 
 .track {
+  width: 375px;
   height: 100%;
   white-space: nowrap;
 }
@@ -116,7 +120,6 @@ hr {
 
 .text {
   animation: scroll 20000ms linear infinite;
-  align-items: center;
   display: inline-flex;
   will-change: transform;
 }
@@ -243,4 +246,7 @@ article img {
   font-size: 15px;
   padding: 4px;
   margin-top: 10px;
+  text-decoration: none;
+  position: absolute;
+  right: 20%;
 }
