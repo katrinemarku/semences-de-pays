@@ -270,3 +270,22 @@ article img {
   font-style: italic;
   font-size: 15px;
 }
+
+footer{
+  background-color: black;
+  color: white;
+}
+
+footer h2{
+  font-family: "Amatic SC";
+  font-weight: normal;
+  font-size: 18px;
+  padding-top: 47px;
+}
+
+footer p {
+  font-size: 12px;
+  font-family: "Courier Std";
+  font-style: normal;
+  padding-left: 30px;
+}
