@@ -250,3 +250,15 @@ article img {
   position: absolute;
   right: 20%;
 }
+
+.point-de-vente {
+  margin-top: 95px; 
+  margin-bottom: 0px;
+}
+
+.point-de-vente img{
+  width: 240px;
+  display: block;
+  margin: auto;
+
+}
