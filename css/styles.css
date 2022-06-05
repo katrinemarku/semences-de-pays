@@ -269,23 +269,31 @@ article img {
   font-family: "Courier Std";
   font-style: italic;
   font-size: 15px;
+  text-decoration: underline;
 }
 
 footer{
   background-color: black;
   color: white;
+  margin-top: 40px;
 }
 
 footer h2{
   font-family: "Amatic SC";
-  font-weight: normal;
   font-size: 18px;
   padding-top: 47px;
 }
 
-footer p {
+footer p{
   font-size: 12px;
   font-family: "Courier Std";
-  font-style: normal;
   padding-left: 30px;
+}
+
+footer img {
+  width: 70px;
+  display: block;
+  position: relative;
+  left: 75%;
+  padding-bottom: 20px;
 }
