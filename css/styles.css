@@ -112,9 +112,7 @@ hr {
 }
 
 .track {
-  width: 375px;
   height: 100%;
-  white-space: nowrap;
 }
 
 .track > p > strong {
@@ -122,7 +120,7 @@ hr {
 }
 
 .text {
-  animation: scroll 20000ms linear infinite;
+  animation: scroll 5000ms linear infinite;
   display: inline-flex;
   will-change: transform;
 }
@@ -266,13 +264,12 @@ article img {
 }
 
 .point-de-vente p {
-  margin-top: 0px;
-  text-align: center;
+  margin-top: 10px;
+  padding-left: 26px;
   color: black;
   font-family: "Courier Std";
   font-style: italic;
-  font-size: 15px;
-  text-decoration: underline;
+  font-size: 12px;
 }
 
 footer{
@@ -309,6 +306,44 @@ footer img {
   position: fixed;
   bottom: 0;
   transform: translate(50%);
-  left: 40%;
+  left: 45%;
   z-index: 2;
 }
+
+.accordion {
+  padding: 0 30px 35px;
+}
+
+.question {
+  border-bottom: 1px dotted #000;
+  padding: 15px 0px 5px;
+  position: relative;
+  margin-right: 26px;
+
+}
+
+.question .glyphicon {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+.answer {
+  max-height: 0;
+  overflow: scroll;
+  transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+.accordion li.open .question .glyphicon {
+  transform: rotate(180deg);
+}
+
+.accordion li.open .answer {
+  max-height: 150px;
+}
+
