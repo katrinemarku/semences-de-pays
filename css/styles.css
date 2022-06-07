@@ -1,43 +1,55 @@
 @font-face {
-  font-family: "Courier Std";
-  src: url("CourierStd-Oblique.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Courier Std";
-  src: url("CourierStd-BoldOblique.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Courier Std";
-  src: url("CourierStd.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Courier Std";
-  src: url("CourierStd-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Amatic SC";
-  src: url("AmaticSC-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Amatic SC";
-  src: url("AmaticSC-Regular.woff2") format("woff2");
+  src: url("AmaticSC-Regular.woff2") format("woff2"),
+    url("AmaticSC-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Courier Std";
+  src: url("CourierStd-Oblique.woff2") format("woff2"),
+    url("CourierStd-Oblique.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Courier Std";
+  src: url("CourierStd.woff2") format("woff2"),
+    url("CourierStd.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Courier Std";
+  src: url("CourierStd-Bold.woff2") format("woff2"),
+    url("CourierStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Courier Std";
+  src: url("CourierStd-BoldOblique.woff2") format("woff2"),
+    url("CourierStd-BoldOblique.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  src: url("AmaticSC-Bold.woff2") format("woff2"),
+    url("AmaticSC-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -45,9 +57,9 @@ html {
 }
 
 body {
-  background-color: #fff;
   max-width: 375px;
   margin: auto;
+  background-color: #fff;
 }
 
 h1 {
@@ -71,9 +83,9 @@ h1 {
 header a {
   font-family: "Courier Std";
   font-style: normal;
-  font-size: 12px;
   text-decoration: none;
-  color: black;
+  color: #000;
+  font-size: 12px;
 }
 
 hr {
@@ -112,23 +124,22 @@ hr {
 }
 
 h2 {
-  font-size: 18px;
   font-family: "Amatic SC";
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-size: 18px;
   padding-left: 30px;
   margin-top: 0px;
 }
 
 main p {
-  font-size: 13px;
   font-family: "Courier Std";
-  font-weight: 500;
   font-style: normal;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 500;
   padding-left: 30px;
   padding-right: 30px;
-  text-align: justify;
 }
 
 main {
@@ -152,26 +163,26 @@ main {
 
 figure {
   position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
-figcaption{
-  font-size: 7px;
+figcaption {
+  font-family: "Courier Std";
   text-align: left;
   font-weight: normal;
-  margin: 240px 36px 0;
-  font-family: "Courier Std";
   font-style: italic;
+  margin: 240px 36px 0;
+  font-size: 7px;
 }
 
 .slider-img {
-  width: 100%;
   transform-origin: center;
-  transition-duration: 0.5s;
   transition-property: transform, opacity;
+  transition-duration: 0.5s;
+  width: 100%;
   opacity: 0;
 }
 
@@ -195,22 +206,21 @@ figcaption{
 }
 
 .slider-button {
+  background-color: #fff;
+  border: 1px solid #ecedf0;
+  display: flex;
+  position: absolute;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #ecedf0;
-  cursor: pointer;
-  background-color: #fff;
-  position: absolute;
   right: 50px;
-  display: flex;
   top: 120px;
   opacity: 0.3;
 }
 
 i.arrow {
+  color: #aaa;
   font-size: 22px;
-  color: grey;
 }
 
 .boxes {
@@ -225,66 +235,65 @@ article img {
   max-width: 140px;
 }
 
-.pumpkin{
-  border: 1px dotted orange;
+.pumpkin {
+  border: 1px dotted #f39200;
   border-radius: 20%;
 }
 
 .peas {
-  border: 1px dotted red;
+  border: 1px dotted #842134;
   border-radius: 20%;
 }
 
 .flower {
-  border: 1px dotted purple;
+  border: 1px dotted #7076b7;
   border-radius: 20%;
 }
 
 .buying-button {
-  border: 2px dotted black;
-  background-color: white;
-  color: black;
   font-family: "Amatic SC";
+  border: 2px dotted #000;
+  background-color: #fff;
+  color: #000;
   font-weight: bold;
   font-style: normal;
-  font-size: 15px;
-  padding: 11px;
-  margin-top: 20px;
   text-decoration: none;
+  text-align: center;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  text-align: center;
+  font-size: 15px;
+  padding: 11px;
+  margin-top: 20px;
 }
 
-.point-de-vente {
+.points-de-vente {
   margin-top: 95px;
   margin-bottom: 0px;
 }
 
-.point-de-vente img {
-  width: 240px;
+.points-de-vente img {
   display: block;
   margin: auto;
+  width: 240px;
 }
 
-.point-de-vente p {
-  margin-top: 10px;
-  padding-left: 26px;
-  color: black;
+.points-de-vente p {
   font-family: "Courier Std";
   font-style: italic;
+  color: #000;
+  margin-top: 10px;
+  padding-left: 26px;
   font-size: 12px;
 }
 
-.point-de-vente h2 {
+.points-de-vente h2 {
   padding-top: 20px;
 }
 
-
 footer {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   margin-top: 40px;
 }
 
@@ -295,24 +304,24 @@ footer h2 {
 }
 
 footer p {
-  font-size: 12px;
   font-family: "Courier Std";
+  font-size: 12px;
   padding-left: 30px;
 }
 
 .plant-picto {
-  width: 70px;
   position: relative;
+  width: 70px;
   left: 75%;
   padding-bottom: 20px;
 }
 
 .go-up-button {
+  box-shadow: 0 0 10px #33333355;
+  position: fixed;
   width: 25px;
   height: 25px;
   display: block;
-  box-shadow: 0 0 10px #33333355;
-  position: fixed;
   bottom: 0;
   z-index: 2;
   right: 50%;
@@ -338,14 +347,14 @@ footer p {
   height: 100%;
   display: flex;
   align-items: center;
-  color: black;
+  color: #000;
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
 }
 
 .answer {
-  max-height: 0;
   overflow: scroll;
   transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+  max-height: 0;
 }
 
 .accordion li.open .question .glyphicon {
