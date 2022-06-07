@@ -32,7 +32,7 @@ function onNavigationClick(e) {
     newSlideItem.classList.add("show");
     currentButton.classList.remove("disabled");
     clearInterval(showNextSliderItemInterval);
-  }, 500);
+  }, 0);
 }
 
 function countController(directionIndex) {

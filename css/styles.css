@@ -53,6 +53,7 @@ html{
 body {
   background-color: white;
   max-width: 375px;
+  margin: auto;
 }
 
 h1 {
@@ -88,21 +89,13 @@ hr {
 
 @keyframes scroll {
   from {
-    transform: translateX(0);
+    transform: translateX(-3.2%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-34.7%);
   }
 }
 
-@keyframes text {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 
 .scroll {
   font-family: "Courier Std";
@@ -113,6 +106,7 @@ hr {
 
 .track {
   height: 100%;
+  overflow: hidden;
 }
 
 .track > p > strong {
@@ -121,8 +115,10 @@ hr {
 
 .text {
   animation: scroll 5000ms linear infinite;
+  transform: translateX(-3.2%);
   display: inline-flex;
   will-change: transform;
+  white-space: nowrap;
 }
 
 h2 {
@@ -245,11 +241,13 @@ article img {
   font-weight: bold;
   font-style: normal;
   font-size: 15px;
-  padding: 4px;
+  padding: 11px;
   margin-top: 10px;
   text-decoration: none;
   position: absolute;
-  right: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  text-align: center;
 }
 
 .point-de-vente {
@@ -290,7 +288,7 @@ footer p{
   padding-left: 30px;
 }
 
-footer img {
+.plant-picto{
   width: 70px;
   position: relative;
   left: 75%;
@@ -304,9 +302,9 @@ footer img {
   box-shadow: 0 0 10px #33333355;
   position: fixed;
   bottom: 0;
-  transform: translate(50%);
-  left: 45%;
   z-index: 2;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .accordion {
