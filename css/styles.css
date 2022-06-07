@@ -3,7 +3,6 @@
   src: url("CourierStd-Oblique.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
@@ -11,7 +10,6 @@
   src: url("CourierStd-BoldOblique.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
@@ -19,7 +17,6 @@
   src: url("CourierStd.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -27,7 +24,6 @@
   src: url("CourierStd-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -35,7 +31,6 @@
   src: url("AmaticSC-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -43,15 +38,14 @@
   src: url("AmaticSC-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   max-width: 375px;
   margin: auto;
 }
@@ -61,7 +55,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   font-size: 33px;
-  padding-top: 10px;
+  padding: 10px 5px;
   margin-bottom: 0px;
 }
 
@@ -71,7 +65,6 @@ h1 {
   justify-content: center;
   justify-content: space-between;
   margin: 0 30px 0;
-  padding-top: 10px;
   padding-bottom: 5px;
 }
 
@@ -84,7 +77,7 @@ header a {
 }
 
 hr {
-  border: 1px solid #000;
+  border: 1px dotted #000;
 }
 
 @keyframes scroll {
@@ -96,7 +89,6 @@ hr {
   }
 }
 
-
 .scroll {
   font-family: "Courier Std";
   font-weight: bold;
@@ -107,9 +99,7 @@ hr {
 .track {
   height: 100%;
   overflow: hidden;
-}
-
-.track > p > strong {
+  padding-bottom: 10px;
   color: #000;
 }
 
@@ -142,7 +132,8 @@ main p {
 }
 
 main {
-  height: 450px;
+  background-color: #fff;
+  height: 480px;
 }
 
 .container {
@@ -159,18 +150,21 @@ main {
   z-index: 1;
 }
 
-.content {
-  position: relative;
-  width: 640px;
-  height: 360px;
-}
-
 figure {
   position: absolute;
   top: 0;
   left: 0;
   display: flex;
   overflow: hidden;
+}
+
+figcaption{
+  font-size: 7px;
+  text-align: left;
+  font-weight: normal;
+  margin: 240px 36px 0;
+  font-family: "Courier Std";
+  font-style: italic;
 }
 
 .slider-img {
@@ -187,7 +181,7 @@ figure {
 }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -270,25 +264,25 @@ article img {
   font-size: 12px;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   margin-top: 40px;
 }
 
-footer h2{
+footer h2 {
   font-family: "Amatic SC";
   font-size: 18px;
   padding-top: 47px;
 }
 
-footer p{
+footer p {
   font-size: 12px;
   font-family: "Courier Std";
   padding-left: 30px;
 }
 
-.plant-picto{
+.plant-picto {
   width: 70px;
   position: relative;
   left: 75%;
@@ -316,7 +310,6 @@ footer p{
   padding: 15px 0px 5px;
   position: relative;
   margin-right: 26px;
-
 }
 
 .question .glyphicon {
@@ -343,4 +336,3 @@ footer p{
 .accordion li.open .answer {
   max-height: 150px;
 }
-
