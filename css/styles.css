@@ -46,10 +46,13 @@
   font-display: swap;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   max-width: 375px;
-  scroll-behavior: smooth;
 }
 
 h1 {
@@ -296,4 +299,16 @@ footer img {
   position: relative;
   left: 75%;
   padding-bottom: 20px;
+}
+
+.go-up-button {
+  width: 25px;
+  height: 25px;
+  display: block;
+  box-shadow: 0 0 10px #33333355;
+  position: fixed;
+  bottom: 0;
+  transform: translate(50%);
+  left: 40%;
+  z-index: 2;
 }
