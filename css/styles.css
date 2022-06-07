@@ -232,22 +232,26 @@ i.arrow {
 }
 
 article img {
-  max-width: 140px;
+  width: 140px;
+  height: 193px;
 }
 
 .pumpkin {
-  border: 1px dotted #f39200;
-  border-radius: 20%;
+  border: 2px dotted #f39200;
+  height: 193px;
+  width: 284px;
 }
 
 .peas {
-  border: 1px dotted #842134;
-  border-radius: 20%;
+  border: 2px dotted #842134;
+  height: 193px;
+  width: 284px;
 }
 
 .flower {
-  border: 1px dotted #7076b7;
-  border-radius: 20%;
+  border: 2px dotted #7076b7;
+  height: 193px;
+  width: 284px;
 }
 
 .buying-button {
@@ -317,7 +321,7 @@ footer p {
 }
 
 .go-up-button {
-  box-shadow: 0 0 10px #33333355;
+  box-shadow: 0 0 10px #02020282;
   position: fixed;
   width: 25px;
   height: 25px;
