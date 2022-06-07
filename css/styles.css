@@ -217,15 +217,28 @@ i.arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 700px;
+  justify-content: space-between;
 }
 
 article img {
-  max-width: 150px;
+  max-width: 140px;
 }
 
-/* .pumpkin{
-  background-color: orange;
-} */
+.pumpkin{
+  border: 1px dotted orange;
+  border-radius: 20%;
+}
+
+.peas {
+  border: 1px dotted red;
+  border-radius: 20%;
+}
+
+.flower {
+  border: 1px dotted purple;
+  border-radius: 20%;
+}
 
 .buying-button {
   border: 2px dotted black;
@@ -236,7 +249,7 @@ article img {
   font-style: normal;
   font-size: 15px;
   padding: 11px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-decoration: none;
   position: absolute;
   right: 50%;
@@ -263,6 +276,11 @@ article img {
   font-style: italic;
   font-size: 12px;
 }
+
+.point-de-vente h2 {
+  padding-top: 20px;
+}
+
 
 footer {
   background-color: black;
