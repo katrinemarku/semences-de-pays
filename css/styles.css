@@ -317,6 +317,7 @@ footer p {
   z-index: 2;
   right: 50%;
   transform: translateX(50%);
+  margin-bottom: 5px;
 }
 
 .accordion {
